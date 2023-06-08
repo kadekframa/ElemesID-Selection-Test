@@ -1,0 +1,61 @@
+{
+    "message": "Get data receipt!",
+    "data": [
+        {
+            "id": 1,
+            "name": "Pizza Paperoni",
+            "category": "Pizza",
+            "colour": "#E6F3F5",
+            "rating": 4
+        },
+        {
+            "id": 2,
+            "name": "Pizza Meat",
+            "category": "Pizza",
+            "colour": "#E6F3F5",
+            "rating": 3
+        },
+        {
+            "id": 3,
+            "name": "Doner Kebab",
+            "category": "Kebab",
+            "colour": "#EAEEFA",
+            "rating": 5
+        },
+        {
+            "id": 4,
+            "name": "Salmon Roll",
+            "category": "Salmon",
+            "colour": "#F9EEF3",
+            "rating": 4
+        },
+        {
+            "id": 5,
+            "name": "Cupcake Choco",
+            "category": "Cupcake",
+            "colour": "#F0FEEB",
+            "rating": 4
+        },
+        {
+            "id": 6,
+            "name": "Doughnut Milk",
+            "category": "Doughnut",
+            "colour": "#F3F7D9",
+            "rating": 5
+        },
+        {
+            "id": 7,
+            "name": "Doughnut Unicorn",
+            "category": "Doughnut",
+            "colour": "#F3F7D9",
+            "rating": 4
+        },
+        {
+            "id": 8,
+            "name": "Kathi Kebab",
+            "category": "Kebab",
+            "colour": "#EAEEFA",
+            "rating": 4
+        }
+    ]
+}
