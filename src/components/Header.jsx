@@ -9,7 +9,7 @@ const Header = (props) => {
 
   return (
     <div
-      className={`w-[100vw] fixed z-50 px-6 duration-1000 ${
+      className={`w-[100vw] fixed z-50 px-6 duration-700 ${
         navbarColour ? "bg-white" : ""
       }`}
     >
