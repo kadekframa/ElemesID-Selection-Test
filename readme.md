@@ -52,5 +52,5 @@ npm run build
 ## Mobile Display
 
 ![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display.jpg?raw=true) <br/>
-![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display2.jpg.jpg?raw=true) <br/>
+![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display2.jpg?raw=true) <br/>
 ![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display3.jpg?raw=true)
