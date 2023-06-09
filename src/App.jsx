@@ -6,6 +6,7 @@ import CatergoryReceipt from "./components/CatergoryReceipt";
 import HeroSection from "./components/HeroSection";
 import TrendingReceipt from "./components/TrendingReceipt";
 import BottomNavbar from "./components/BottomNavbar";
+import dataReceipt from "./data/dataReceipt";
 
 function App() {
   const [data, setData] = useState(false);
@@ -22,19 +23,8 @@ function App() {
   }, [data, setData, status]);
 
   const getData = () => {
-    const response = fetch("../data.json", {
-      method: "GET",
-    });
-
-    response
-      .then((result) => {
-        return result.json();
-      })
-      .then((value) => {
-        setTimeout(() => {
-          setData(value.data);
-        }, 400);
-      });
+    const response = dataReceipt.data;
+    setData(response);
   };
 
   const handleAllReceipt = () => {

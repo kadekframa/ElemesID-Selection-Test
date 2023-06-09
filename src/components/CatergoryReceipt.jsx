@@ -3,7 +3,7 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
 import { Next, Previous } from "../utils/icon";
-import { categories } from "../utils/dataCategory";
+import { categories } from "../data/dataCategory";
 
 const CatergoryReceipt = () => {
   return (
