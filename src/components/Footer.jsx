@@ -5,7 +5,7 @@ import { Email, Instagram, Telephone } from "../utils/icon";
 const Footer = () => {
   return (
     <div className="w-[100vw] ">
-      <div className="grid md:grid-cols-footer-layout w-[1350px] m-auto rounded-[20px] bg-[#F9FFF7] p-12">
+      <div className="grid md:grid-cols-footer-layout w-full md:w-[1350px] m-auto rounded-[20px] bg-[#F9FFF7] p-12">
         <div className="">
           <img src="assets/logo.svg" alt="Elemes Logo" width={"180px"} />
           <p className="text-sm mt-7 text-[#757575]">
@@ -13,7 +13,7 @@ const Footer = () => {
             Kecamatan Setiabudi, Kota Jakarta Selatan, <br />
             Daerah Khusus Ibukota Jakarta 12950
           </p>
-          <div className="flex mt-8">
+          <div className="flex mt-2 md:mt-8">
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=elemesid@gmail.com&su=SUBJECT&body=BODY"
               target="blank"
@@ -38,7 +38,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col text-sm">
-          <p className="mb-5 text-lg font-medium">Categories</p>
+          <p className="mb-0 md:mb-5 text-lg font-medium mt-6 md:mt-0">
+            Categories
+          </p>
           <a className="cursor-pointer font-normal mt-2 text-[#757575]">
             Cupcake
           </a>
@@ -56,7 +58,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col text-sm ">
-          <p className="mb-5 text-lg font-medium">About Us</p>
+          <p className="mb-0 md:mb-5 mt-6 md:mt-0 text-lg font-medium">
+            About Us
+          </p>
           <a className="cursor-pointer font-normal mt-2 text-[#757575]">
             About Us
           </a>
@@ -74,7 +78,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col text-sm ">
-          <p className="mb-5 text-lg font-medium">Newsletter</p>
+          <p className="mb-0 md:mb-5 mt-6 md:mt-0 text-lg font-medium">
+            Newsletter
+          </p>
           <p className="cursor-pointer font-normal mt-2 text-[#757575]">
             Get now free 50% discount for all <br />
             products on your first order
@@ -97,7 +103,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <p className="text-[#757575] uppercase text-xs text-center mt-12">
+      <p className="text-[#757575] uppercase text-xs text-center mt-2 md:mt-12">
         © 2021 Elemes id. All rights reserved
       </p>
     </div>

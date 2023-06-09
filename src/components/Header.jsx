@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <div className="w-[100vw] border fixed z-50 px-6">
-      <div className="py-4 w-full md:w-[1300px] mx-auto flex justify-between items-center border">
+      <div className="py-3 md:py-4 w-full md:w-[1300px] mx-auto flex justify-between items-center border">
         <a href="/">
           <img
             src="assets/logo.svg"

@@ -146,14 +146,14 @@ function App() {
       </div>
 
       {/* Receipt Category */}
-      {/* <div className="w-[100vw] border mt-12">
-        <div className="w-[1300px] m-auto">
-          <p className="text-[38px] font-medium leading-tight">
+      <div className="w-[100vw] border mt-12">
+        <div className="w-full md:w-[1300px] m-auto">
+          <p className="text-[24px] md:text-[38px] font-medium leading-tight px-6 md:px-0">
             Browser Our Category <br />
             <span className="text-[#8BAC3E]">Receipt</span>
           </p>
 
-          <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[240px]">
+          <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[172px] md:min-h-[240px]">
             {categories.map((value) => {
               return (
                 <CategoryCard
@@ -165,7 +165,7 @@ function App() {
             })}
           </div>
 
-          <div className="w-full flex justify-end items-center">
+          <div className="hidden md:flex justify-end items-center">
             <div className="flex">
               <button className="mx-auto bg-[#8BAC3E] px-4 py-2 rounded-full text-white font-medium uppercase flex items-center mr-3 hover:shadow-lg hover:bg-[#98b94a] active:bg-[#8BAC3E]">
                 <Previous />
@@ -178,18 +178,18 @@ function App() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Receipt Trending */}
-      {/* <div className="w-[100vw] border mt-12 mb-48">
-        <div className="w-[1300px] m-auto">
-          <p className="text-[38px] font-medium leading-tight">
+      <div className="w-[100vw] border mt-12 mb-32 md:mb-48">
+        <div className="w-full md:w-[1300px] m-auto px-6 md:px-0">
+          <p className="text-[24px] md:text-[38px] font-medium leading-tight">
             Browser Our Trending <br />
             <span className="text-[#8BAC3E]">Receipt</span>
           </p>
 
           <div
-            className={`grid grid-cols-4 gap-x-6 gap-8 my-12 ${
+            className={`grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-4 md:gap-y-8 my-12 ${
               data ? "mb-16" : "mb-24 relative"
             }`}
           >
@@ -253,7 +253,7 @@ function App() {
           <div className="w-full flex justify-center items-center">
             <button
               onClick={handleAllReceipt}
-              className="bg-[#88AC3E] px-7 py-2 rounded-full text-white font-medium shadow-lg flex items-center"
+              className="bg-[#88AC3E] px-5 md:px-7 py-2 rounded-full text-sm md:text-base text-white font-medium shadow-lg flex items-center"
             >
               {loading && (
                 <svg
@@ -277,10 +277,10 @@ function App() {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
