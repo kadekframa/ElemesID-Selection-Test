@@ -5,7 +5,7 @@ import CategoryCard from "./CategoryCard";
 import { Next, Previous } from "../utils/icon";
 import { categories } from "../data/dataCategory";
 
-const CatergoryReceipt = () => {
+const CategoryReceipt = () => {
   return (
     <div className="w-[100vw] mt-12">
       <div className="w-full md:w-[1300px] m-auto">
@@ -43,4 +43,4 @@ const CatergoryReceipt = () => {
   );
 };
 
-export default CatergoryReceipt;
+export default CategoryReceipt;

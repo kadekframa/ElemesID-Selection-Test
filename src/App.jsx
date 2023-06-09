@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CatergoryReceipt from "./components/CatergoryReceipt";
+import CatergoryReceipt from "./components/CategoryReceipt";
 import HeroSection from "./components/HeroSection";
 import TrendingReceipt from "./components/TrendingReceipt";
 import BottomNavbar from "./components/BottomNavbar";
