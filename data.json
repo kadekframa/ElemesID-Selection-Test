@@ -5,56 +5,112 @@
             "id": 1,
             "name": "Pizza Paperoni",
             "category": "Pizza",
-            "colour": "#E6F3F5",
+            "colour": "bg-[#E6F3F5]",
+            "location": "/assets/images/pizza-paperoni.svg",
             "rating": 4
         },
         {
             "id": 2,
             "name": "Pizza Meat",
             "category": "Pizza",
-            "colour": "#E6F3F5",
+            "colour": "bg-[#E6F3F5]",
+            "location": "/assets/images/pizza-meat.svg",
             "rating": 3
         },
         {
             "id": 3,
             "name": "Doner Kebab",
             "category": "Kebab",
-            "colour": "#EAEEFA",
+            "colour": "bg-[#EAEEFA]",
+            "location": "/assets/images/doner-kebab.svg",
             "rating": 5
         },
         {
             "id": 4,
             "name": "Salmon Roll",
             "category": "Salmon",
-            "colour": "#F9EEF3",
+            "colour": "bg-[#F9EEF3]",
+            "location": "/assets/images/salmon-roll.svg",
             "rating": 4
         },
         {
             "id": 5,
             "name": "Cupcake Choco",
             "category": "Cupcake",
-            "colour": "#F0FEEB",
+            "colour": "bg-[#F0FEEB]",
+            "location": "/assets/images/cupcake-choco.svg",
             "rating": 4
         },
         {
             "id": 6,
             "name": "Doughnut Milk",
             "category": "Doughnut",
-            "colour": "#F3F7D9",
+            "colour": "bg-[#F3F7D9]",
+            "location": "/assets/images/doughnut-milk.svg",
             "rating": 5
         },
         {
             "id": 7,
             "name": "Doughnut Unicorn",
             "category": "Doughnut",
-            "colour": "#F3F7D9",
+            "colour": "bg-[#F3F7D9]",
+            "location": "/assets/images/doughnut-unicorn.svg",
             "rating": 4
         },
         {
             "id": 8,
             "name": "Kathi Kebab",
             "category": "Kebab",
-            "colour": "#EAEEFA",
+            "colour": "bg-[#EAEEFA]",
+            "location": "/assets/images/kathi-kebab.svg",
+            "rating": 4
+        },
+        {
+            "id": 9,
+            "name": "Cupcake Oreo",
+            "category": "Cupcake",
+            "colour": "bg-[#F0FEEB]",
+            "location": "/assets/images/cupcake-oreo.jpeg",
+            "rating": 4
+        },
+        {
+            "id": 10,
+            "name": "Salmon Lemonillo",
+            "category": "Salmon",
+            "colour": "bg-[#F9EEF3]",
+            "location": "/assets/images/salmon-lemonillo.jpg",
+            "rating": 4
+        },
+        {
+            "id": 11,
+            "name": "Kebab Premium",
+            "category": "Kebab",
+            "colour": "bg-[#EAEEFA]",
+            "location": "/assets/images/kebab-premium.jpg",
+            "rating": 4
+        },
+        {
+            "id": 12,
+            "name": "Salmon Sushi",
+            "category": "Salmon",
+            "colour": "bg-[#F9EEF3]",
+            "location": "/assets/images/salmon-sushi.jpg",
+            "rating": 4
+        },
+        {
+            "id": 13,
+            "name": "Kebab Armagedon",
+            "category": "Kebab",
+            "colour": "bg-[#EAEEFA]",
+            "location": "/assets/images/kebab-armagedon.jpg",
+            "rating": 4
+        },
+        {
+            "id": 14,
+            "name": "Cheese TanPanama",
+            "category": "Pizza",
+            "colour": "bg-[#E6F3F5]",
+            "location": "/assets/images/cheese-pizza.jpg",
             "rating": 4
         }
     ]
