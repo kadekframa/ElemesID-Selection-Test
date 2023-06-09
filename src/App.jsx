@@ -87,7 +87,7 @@ function App() {
       <Header />
 
       {/* Hero */}
-      <div className="w-[100vw] border-2 h-screen md:h-full md:max-h-[690px] before:bg-[url('assets/bg-hover.jpg')] md:before:bg-[url('assets/background.svg')] before:absolute before:opacity-5 before:top-0 before:left-0 before:w-full before:h-screen md:before:max-h-[690px] before:bg-cover before:z-[-1]">
+      <div className="w-[100vw] h-screen md:h-full md:max-h-[690px] before:bg-[url('assets/bg-hover.jpg')] md:before:bg-[url('assets/background.svg')] before:absolute before:opacity-5 before:top-0 before:left-0 before:w-full before:h-screen md:before:max-h-[690px] before:bg-cover before:z-[-1]">
         <div className="m-auto grid grid-cols-1 md:grid-cols-2 w-full md:w-[1300px] py-24 md:py-24">
           <div className="flex flex-col justify-center p-6 md:p-0 relative">
             <p className="text-[48px] md:text-[64px] font-medium text-[#8BAC3E] leading-none tracking-tighter">
@@ -146,7 +146,7 @@ function App() {
       </div>
 
       {/* Receipt Category */}
-      <div className="w-[100vw] border mt-12">
+      <div className="w-[100vw] mt-12">
         <div className="w-full md:w-[1300px] m-auto">
           <p className="text-[24px] md:text-[38px] font-medium leading-tight px-6 md:px-0">
             Browser Our Category <br />
@@ -181,7 +181,7 @@ function App() {
       </div>
 
       {/* Receipt Trending */}
-      <div className="w-[100vw] border mt-12 mb-32 md:mb-48">
+      <div className="w-[100vw] mt-12 mb-32 md:mb-48">
         <div className="w-full md:w-[1300px] m-auto px-6 md:px-0">
           <p className="text-[24px] md:text-[38px] font-medium leading-tight">
             Browser Our Trending <br />
@@ -258,7 +258,7 @@ function App() {
               {loading && (
                 <svg
                   aria-hidden="true"
-                  className="w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-sky-700"
+                  className="w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-sky-600"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
