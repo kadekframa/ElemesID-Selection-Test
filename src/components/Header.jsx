@@ -16,7 +16,7 @@ const Header = () => {
           />
         </a>
 
-        <button className="rounded-full px-3 py-2 text-[11px] text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] hover:shadow-md font-medium">
+        <button className="md:hidden rounded-full px-3 py-2 text-[11px] text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] hover:shadow-md font-medium">
           Daftar Sekarang
         </button>
 

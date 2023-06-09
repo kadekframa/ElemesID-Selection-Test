@@ -3,9 +3,9 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
 import { Next, Previous } from "../utils/icon";
+import { categories } from "../utils/dataCategory";
 
-const CatergoryReceipt = (props) => {
-  const { categories } = props;
+const CatergoryReceipt = () => {
   return (
     <div className="w-[100vw] mt-12">
       <div className="w-full md:w-[1300px] m-auto">
