@@ -13,6 +13,8 @@ function App() {
   const [status, setStatus] = useState(true);
   const [indexLimit, setIndexLimit] = useState(8);
   const [loading, setLoading] = useState(false);
+  const [navbarColour, setNavbarColour] = useState(false);
+  const [bottomNavbarDisplay, setBottomNavbarDisplay] = useState(false);
 
   useEffect(() => {
     if (status) {
@@ -20,6 +22,21 @@ function App() {
       setStatus(false);
     }
     console.info(data);
+
+    const displayNavbar = () => {
+      console.info(window.scrollY);
+      if (window.scrollY > 210) {
+        setNavbarColour(true);
+        setBottomNavbarDisplay(true);
+      } else {
+        setNavbarColour(false);
+        setBottomNavbarDisplay(false);
+      }
+    };
+
+    window.addEventListener("scroll", () => {
+      displayNavbar();
+    });
   }, [data, setData, status]);
 
   const getData = () => {
@@ -41,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header navbarColour={navbarColour} />
 
       {/* Hero */}
       <HeroSection />
@@ -61,7 +78,7 @@ function App() {
       <Footer />
 
       {/* Bottom Navbar */}
-      <BottomNavbar />
+      <BottomNavbar bottomNavbarDisplay={bottomNavbarDisplay} />
     </>
   );
 }

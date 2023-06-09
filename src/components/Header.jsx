@@ -1,12 +1,18 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
   const options = ["Home", "About", "Promotions", "Blogs", "ContactUs"];
+  const { navbarColour } = props;
 
   return (
-    <div className="w-[100vw] border fixed z-50 px-6">
+    <div
+      className={`w-[100vw] fixed z-50 px-6 duration-1000 ${
+        navbarColour ? "bg-white" : ""
+      }`}
+    >
       <div className="py-3 md:py-4 w-full md:w-[1300px] mx-auto flex justify-between items-center">
         <a href="/">
           <img
