@@ -2,10 +2,14 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Next, Previous, StarFalse, StarTrue } from "./utils/icon";
-
-import pizza from "/assets/images/pizza-paperoni.svg";
-import CategoryCard from "./components/CategoryCard";
+import {
+  HumbergerIcon,
+  Next,
+  Previous,
+  StarFalse,
+  StarTrue,
+} from "./utils/icon";
+import CatergoryReceipt from "./components/CatergoryReceipt";
 
 function App() {
   const categories = [
@@ -146,39 +150,7 @@ function App() {
       </div>
 
       {/* Receipt Category */}
-      <div className="w-[100vw] mt-12">
-        <div className="w-full md:w-[1300px] m-auto">
-          <p className="text-[24px] md:text-[38px] font-medium leading-tight px-6 md:px-0">
-            Browser Our Category <br />
-            <span className="text-[#8BAC3E]">Receipt</span>
-          </p>
-
-          <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[172px] md:min-h-[240px]">
-            {categories.map((value) => {
-              return (
-                <CategoryCard
-                  key={value.id}
-                  title={value.title}
-                  bgcolour={value.bgcolour}
-                />
-              );
-            })}
-          </div>
-
-          <div className="hidden md:flex justify-end items-center">
-            <div className="flex">
-              <button className="mx-auto bg-[#8BAC3E] px-4 py-2 rounded-full text-white font-medium uppercase flex items-center mr-3 hover:shadow-lg hover:bg-[#98b94a] active:bg-[#8BAC3E]">
-                <Previous />
-                <span className="ml-2.5 font-medium">Prev</span>
-              </button>
-              <button className="mx-auto bg-[#8BAC3E] px-4 py-2 rounded-full text-white font-medium uppercase flex items-center hover:shadow-lg hover:bg-[#98b94a] active:bg-[#8BAC3E]">
-                <span className="mr-2.5 font-medium">Next</span>
-                <Next />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CatergoryReceipt categories={categories} />
 
       {/* Receipt Trending */}
       <div className="w-[100vw] mt-12 mb-32 md:mb-48">
@@ -189,7 +161,7 @@ function App() {
           </p>
 
           <div
-            className={`grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-4 md:gap-y-8 my-12 ${
+            className={`grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-4 md:gap-y-8 my-12 px-1 md:px-0 ${
               data ? "mb-16" : "mb-24 relative"
             }`}
           >
@@ -202,7 +174,7 @@ function App() {
                   return (
                     <a
                       key={value.id}
-                      className={`cursor-pointer ${value.colour} rounded-2xl px-6 py-8 relative transition-[all_2000ms_ease] hover:z-0 before:bg-[url('assets/bg-hover.jpg')] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-cover before:opacity-0 before:z-[-10] before:transition-[opacity_2s_ease] hover:before:opacity-10`}
+                      className={`cursor-pointer shadow-lg shadow-gray-100 ${value.colour} rounded-2xl px-6 py-8 relative transition-[all_2000ms_ease] hover:z-0 before:bg-[url('assets/bg-hover.jpg')] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-cover before:opacity-0 before:z-[-10] before:transition-[opacity_2s_ease] hover:before:opacity-10`}
                     >
                       <img
                         src={value.location}
@@ -281,6 +253,21 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      <div className="fixed w-full bottom-0 left-0 border border-gray-50 flex md:hidden justify-between items-center px-6 py-3 bg-white">
+        <button className="flex flex-col items-center px-3 py-1 text-[#757575]">
+          <HumbergerIcon />
+          <span className="text-xs">Home</span>
+        </button>
+        <button className="flex flex-col items-center text-[#757575]">
+          <HumbergerIcon />
+          <span className="text-xs">Promotions</span>
+        </button>
+        <button className="flex flex-col items-center px-2 text-[#757575]">
+          <HumbergerIcon />
+          <span className="text-xs">Others</span>
+        </button>
+      </div>
     </>
   );
 }
