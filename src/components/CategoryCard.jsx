@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Cupcake, Doughnut, Kebab, Pizza, Salmon } from "../utils/icon";
+import bghover from "../../public/assets/bg-hover.jpg";
 
 const CategoryCard = (props) => {
   const { title, bgcolour } = props;
@@ -15,7 +16,7 @@ const CategoryCard = (props) => {
 
   return (
     <a
-      className={`rounded-lg bg-[${bgcolour}] bg-cover  min-w-[230px] h-[172px] hover:scale-105 text-center max-w-[155px] flex flex-col items-center justify-center duration-500 cursor-pointer relative transition-[all_2000ms_ease] hover:z-0 before:bg-[url('assets/bg-hover.jpg')] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-cover before:opacity-0 before:z-[-10] before:transition-[opacity_2s_ease] hover:before:opacity-10 over`}
+      className={`rounded-lg bg-[${bgcolour}] bg-cover hover:bg-[url(${bghover})] min-w-[230px] h-[172px] hover:scale-105 text-center max-w-[155px] flex flex-col items-center justify-center duration-500 cursor-pointer relative transition-[all_2000ms_ease] before:bg-[url('assets/bg-hover.jpg')] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-cover before:opacity-0 before:z-[-10] before:transition-[opacity_2s_ease] hover:before:opacity-10 over`}
     >
       {icon[title]}
       <p className="font-medium text-[15px] md:text-base text-[#333333] mt-4">
