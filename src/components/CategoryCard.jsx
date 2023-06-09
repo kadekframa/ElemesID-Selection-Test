@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Cupcake, Doughnut, Kebab, Pizza, Salmon } from "../utils/icon";
-import bghover from "../../public/assets/bg-hover.jpg";
+import bghover from "../assets/images/bg-hover.jpg";
 
 const CategoryCard = (props) => {
   const { title, bgcolour } = props;
