@@ -12,8 +12,8 @@ Tech Stack:
 
 - Vite
 - Reactjs
-- Tailwind Scrollbar Hide
 - TailwindCSS
+- Tailwind Scrollbar Hide
 
 Font:
 
@@ -21,14 +21,14 @@ Font:
 
 Assets:
 
-- The assets of this project have provided figma design.
+- The assets of this project have provided from figma design.
 
 ## Configuration
 
 #### Clone Project
 
 ```
-clone this project from this repository to your local
+Clone the project from this repository to your local
 ```
 
 #### Project Setup
@@ -51,6 +51,6 @@ npm run build
 
 ## Mobile Display
 
-![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display.jpg?raw=true)
-![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display2.jpg.jpg?raw=true)
+![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display.jpg?raw=true) <br/>
+![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display2.jpg.jpg?raw=true) <br/>
 ![ElemesID-Mobile](https://github.com/kadekframa/ElemesID-Selection-Test/blob/main/public/assets/mobile-display3.jpg?raw=true)
