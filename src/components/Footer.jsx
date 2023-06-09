@@ -14,13 +14,25 @@ const Footer = () => {
             Daerah Khusus Ibukota Jakarta 12950
           </p>
           <div className="flex mt-8">
-            <a className="cursor-pointer p-2 rounded-full hover:bg-[#8BAC3E] mr-2 flex justify-center items-center">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=elemesid@gmail.com&su=SUBJECT&body=BODY"
+              target="blank"
+              className="cursor-pointer p-2 rounded-full hover:bg-[#8BAC3E] mr-2 flex justify-center items-center"
+            >
               <Email />
             </a>
-            <a className="cursor-pointer px-2.5 py-2 rounded-full hover:bg-[#8BAC3E] mr-2 flex justify-center items-center">
+            <a
+              href="https://wa.me/6288811112222"
+              target="blank"
+              className="cursor-pointer px-2.5 py-2 rounded-full hover:bg-[#8BAC3E] mr-2 flex justify-center items-center"
+            >
               <Telephone />
             </a>
-            <a className="cursor-pointer px-2.5 py-2 rounded-full hover:bg-[#8BAC3E] flex justify-center items-center">
+            <a
+              href="https://www.instagram.com/elemes_indonesia/"
+              target="blank"
+              className="cursor-pointer px-2.5 py-2 rounded-full hover:bg-[#8BAC3E] flex justify-center items-center"
+            >
               <Instagram />
             </a>
           </div>
@@ -49,7 +61,15 @@ const Footer = () => {
             About Us
           </a>
           <a className="cursor-pointer font-normal mt-2 text-[#757575]">FAQ</a>
-          <a className="cursor-pointer font-normal mt-2 text-[#757575]">
+          <a
+            href="https://wa.me/6288811112222"
+            onClick={() =>
+              alert(
+                "Please tell our team if you have any problem. Thank you..!"
+              )
+            }
+            className="cursor-pointer font-normal mt-2 text-[#757575]"
+          >
             Report Problem
           </a>
         </div>

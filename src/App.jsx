@@ -87,35 +87,37 @@ function App() {
       <Header />
 
       {/* Hero */}
-      <div className="w-[100vw] max-h-[690px] before:bg-[url('assets/background.svg')] before:absolute before:opacity-5 before:top-0 before:left-0 before:w-full before:h-full before:max-h-[690px] before:bg-cover before:z-[-1]">
-        <div className="m-auto grid grid-cols-2 w-[1300px] py-24">
-          <div className="flex flex-col justify-center">
-            <p className="text-[64px] font-medium text-[#8BAC3E] leading-none tracking-tighter">
+      <div className="w-[100vw] border-2 h-screen md:h-full md:max-h-[690px] before:bg-[url('assets/bg-hover.jpg')] md:before:bg-[url('assets/background.svg')] before:absolute before:opacity-5 before:top-0 before:left-0 before:w-full before:h-screen md:before:max-h-[690px] before:bg-cover before:z-[-1]">
+        <div className="m-auto grid grid-cols-1 md:grid-cols-2 w-full md:w-[1300px] py-24 md:py-24">
+          <div className="flex flex-col justify-center p-6 md:p-0 relative">
+            <p className="text-[48px] md:text-[64px] font-medium text-[#8BAC3E] leading-none tracking-tighter">
               Good Food Us <br /> Good Mood
             </p>
-            <p className="my-8 text-lg">
-              I would think that conserving our natural resources <br /> should
-              be a conservative position: Not to waste food, and <br /> not to
-              throw away a lot of the food that we buy.
-            </p>
-            <div className="text-lg">
-              <button className="mr-3 border rounded-full px-5 py-2.5 text-sm text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] font-medium shadow-xl">
-                Daftar Sekarang
-              </button>
-              <button className="text-sm rounded-full px-4 py-2.5 bg-[#F2F2F2] hover:bg-[#f6f6f6] active:bg-[#F2F2F2] font-medium shadow">
-                About Us
-              </button>
+            <div className="absolute md:static top-[470px] mr-6 md:mr-0">
+              <p className="my-8 text-[15px] md:text-lg text-[#757575]">
+                I would think that conserving our natural resources should be a
+                conservative position: Not to waste food, and not to throw away
+                a lot of the food that we buy.
+              </p>
+              <div>
+                <button className="mr-3 border rounded-full px-5 py-2.5 text-sm text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] font-medium shadow-xl">
+                  Daftar Sekarang
+                </button>
+                <button className="text-sm rounded-full px-4 py-2.5 bg-[#F2F2F2] hover:bg-[#f6f6f6] active:bg-[#F2F2F2] font-medium shadow">
+                  About Us
+                </button>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="p-16 rounded-full bg-black bg-opacity-5 relative">
+          <div className="flex md:justify-center p-6 md:p-0">
+            <div className="p-7 md:p-16 rounded-full bg-black bg-opacity-5 w-[250px] md:w-[518px] relative">
               <img
                 src="assets/hero-image.svg"
-                className="w-[412px]"
+                className="w-[340px] md:w-[412px]"
                 alt="Green Salad Tomato"
                 title="Green Salad Tomato"
               />
-              <div className="absolute flex bg-white rounded-[17px] p-5 w-[292px] shadow-lg shadow-gray-200 top-[415px] left-[-56px] bg-opacity-80">
+              <div className="absolute flex bg-white rounded-[17px] p-4 md:p-5 w-[236px] md:w-[292px] shadow-lg shadow-gray-200 top-[164px] md:top-[396px] left-[106px] md:left-[-68px] bg-opacity-80">
                 <img
                   src="assets/hero-image.svg"
                   alt="Green Salad Tomato"
@@ -123,10 +125,12 @@ function App() {
                   width={"53px"}
                 />
                 <div className="ml-4">
-                  <p className="text-sm font-semibold text-[#000000]">
+                  <p className="text-xs md:text-sm font-semibold text-[#000000]">
                     Green Salad Tomato
                   </p>
-                  <p className="text-xs text-[#757575]">Tomato</p>
+                  <p className="text-[10px] text-[#757575] mt-1 md:mt-0">
+                    Tomato
+                  </p>
                   <div className="flex mt-2">
                     <StarTrue />
                     <StarTrue />
@@ -141,14 +145,14 @@ function App() {
         </div>
       </div>
 
-      <div className="w-[100vw] border mt-12">
+      {/* Receipt Category */}
+      {/* <div className="w-[100vw] border mt-12">
         <div className="w-[1300px] m-auto">
           <p className="text-[38px] font-medium leading-tight">
             Browser Our Category <br />
             <span className="text-[#8BAC3E]">Receipt</span>
           </p>
 
-          {/* Section Slider */}
           <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[240px]">
             {categories.map((value) => {
               return (
@@ -174,9 +178,10 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-[100vw] border mt-12 mb-48">
+      {/* Receipt Trending */}
+      {/* <div className="w-[100vw] border mt-12 mb-48">
         <div className="w-[1300px] m-auto">
           <p className="text-[38px] font-medium leading-tight">
             Browser Our Trending <br />
@@ -185,7 +190,7 @@ function App() {
 
           <div
             className={`grid grid-cols-4 gap-x-6 gap-8 my-12 ${
-              data ? "" : "mb-24 relative"
+              data ? "mb-16" : "mb-24 relative"
             }`}
           >
             {data ? (
@@ -272,10 +277,10 @@ function App() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
