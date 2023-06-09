@@ -4,7 +4,7 @@ import { Email, Instagram, Telephone } from "../utils/icon";
 
 const Footer = () => {
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] mb-20 md:mb-0">
       <div className="grid md:grid-cols-footer-layout w-full md:w-[1350px] m-auto rounded-[20px] bg-[#F9FFF7] p-12">
         <div className="">
           <img src="assets/logo.svg" alt="Elemes Logo" width={"180px"} />

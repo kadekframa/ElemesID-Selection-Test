@@ -27,7 +27,7 @@ const HeroSection = (props) => {
           </div>
         </div>
         <div className="flex md:justify-center p-6 md:p-0">
-          <div className="p-7 md:p-16 rounded-full bg-black bg-opacity-5 w-[250px] md:w-[518px] relative">
+          <div className="p-7 md:p-16 rounded-full bg-black bg-opacity-5 w-[248px] md:w-[518px] relative">
             <img
               src="assets/hero-image.svg"
               className="w-[340px] md:w-[412px]"

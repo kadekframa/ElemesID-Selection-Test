@@ -21,10 +21,10 @@ function App() {
       getData();
       setStatus(false);
     }
+
     console.info(data);
 
     const displayNavbar = () => {
-      console.info(window.scrollY);
       if (window.scrollY > 210) {
         setNavbarColour(true);
         setBottomNavbarDisplay(true);

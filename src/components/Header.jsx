@@ -22,7 +22,7 @@ const Header = (props) => {
           />
         </a>
 
-        <button className="md:hidden rounded-full px-3 py-2 text-[11px] text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] hover:shadow-md font-medium">
+        <button className="md:hidden rounded-full px-3 py-2 text-sm text-white bg-[#8BAC3E] hover:bg-[#98b555] active:bg-[#8BAC3E] hover:shadow-md font-medium">
           Daftar Sekarang
         </button>
 
@@ -35,7 +35,7 @@ const Header = (props) => {
                   className="mr-7 cursor-pointer text-[#757575] hover:text-sky-700 relative"
                 >
                   {option}
-                  <p className="absolute bg-[#E7462D] px-2.5 text-[8px] text-white font-bold w-min rounded-lg top-[-16px] right-[-16px]">
+                  <p className="absolute animate-bounce bg-[#E7462D] px-2.5 text-[8px] text-white font-bold w-min rounded-lg top-[-16px] right-[-16px]">
                     HOT
                   </p>
                 </a>

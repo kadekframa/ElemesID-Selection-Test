@@ -14,7 +14,7 @@ const CategoryReceipt = () => {
           <span className="text-[#8BAC3E]">Receipt</span>
         </p>
 
-        <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[172px] md:min-h-[240px]">
+        <div className="flex flex-row gap-3.5 pt-6 mt-5 mx-auto overflow-x-auto scrollbar-hide min-h-[204px] md:min-h-[240px]">
           {categories.map((value) => {
             return (
               <CategoryCard
